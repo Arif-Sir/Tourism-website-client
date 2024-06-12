@@ -4,6 +4,7 @@
 import Lottie from "lottie-react";
 import { useNavigate } from "react-router-dom";
 import groovyWalkAnimation from "../../../public/email.json";
+import { Bounce,Roll } from "react-awesome-reveal";
 
 const About = () => {
     const nevigate = useNavigate();
@@ -20,8 +21,9 @@ const About = () => {
             <br />
             <hr className="border-black" />
             <br />
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        {/* Country Card Section */}
+           <Roll>
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             {/* banfladesh */}
             <div className="Bangladesh" onClick={()=> handelCardClick('Bangladesh')}>
             <div className="card bg-base-100 shadow-xl mb-3 image-full">
@@ -101,6 +103,7 @@ const About = () => {
 </div>
         </div>
         </div>
+           </Roll>
 
         {/* lets talk */}
         <hr />
@@ -115,6 +118,7 @@ const About = () => {
   </div>
   <div className="card-body">
     <h2 className="card-title text-3xl">Give Us A Message abut your thoght</h2>
+    <Bounce>
     <form className="card-body">
         <div className="form-control">
           <label className="label">
@@ -138,6 +142,7 @@ const About = () => {
           <button className="btn btn-primary">send</button>
         </div>
       </form>
+    </Bounce>
   </div>
 </div>
         </div>
