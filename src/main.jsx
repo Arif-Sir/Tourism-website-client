@@ -56,13 +56,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/viewdsetail/:id",
-        // element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute> ,
+        element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute> ,
         loader: ({params})=>fetch(`https://tourism-website-server-seven.vercel.app/spots/${params.id}`)
  
       },
       {
         path: "/mylist",
-        element: <PrivateRoute><MyList></MyList></PrivateRoute>,
+        // element: <PrivateRoute><MyList></MyList></PrivateRoute>,
       },
       {
         path: "/addsport",
