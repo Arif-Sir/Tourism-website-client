@@ -56,7 +56,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/viewdsetail/:id",
-        element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute> ,
+        // element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute> ,
         loader: ({params})=>fetch(`https://tourism-website-server-seven.vercel.app/spots/${params.id}`)
  
       },
