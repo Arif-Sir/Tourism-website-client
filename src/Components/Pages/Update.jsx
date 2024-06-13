@@ -29,7 +29,7 @@ const Update = () => {
         console.log(newUpdate);
 
         // sending to server
-        fetch(`http://localhost:3000/spots/${_id}`,{
+        fetch(`https://tourism-website-server-seven.vercel.app/spots/${_id}`,{
             method: "PUT", 
             headers: {
               "Content-Type": "application/json",

@@ -25,7 +25,7 @@ const MyList = () => {
               console.log('korsi Delete');
 
             //   for getting id for delete
-            fetch(`http://localhost:3000/spots/${_id}`,{
+            fetch(`https://tourism-website-server-seven.vercel.app/spots/${_id}`,{
                 method:'DELETE'
             })
             .then(res=> res.json())
@@ -46,7 +46,7 @@ const MyList = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:3000/spots')
+        fetch('https://tourism-website-server-seven.vercel.app/spots')
             .then(res => res.json())
             .then(data => {
                 console.log(data.filter(singleData => singleData.email == user.email));

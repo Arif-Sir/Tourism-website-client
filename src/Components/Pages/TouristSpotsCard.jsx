@@ -12,7 +12,7 @@ const TouristSpotsCard = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:3000/spots?country=${country}`)
+        fetch(`https://tourism-website-server-seven.vercel.app/spots?country=${country}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data.filter(singleData => singleData.country == country));

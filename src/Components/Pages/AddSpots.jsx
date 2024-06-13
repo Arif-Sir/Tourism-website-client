@@ -23,7 +23,7 @@ const AddSpots = () => {
         console.log(newSpot);
 
         // sending to server
-        fetch('http://localhost:3000/spots',{
+        fetch('https://tourism-website-server-seven.vercel.app/spots',{
             method: "POST", 
             headers: {
               "Content-Type": "application/json",

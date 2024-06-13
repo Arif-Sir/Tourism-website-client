@@ -55,7 +55,7 @@ const Resister = () => {
                 
                 // creating new user in database
                 const user ={email};
-                fetch('http://localhost:3000/user',{
+                fetch('https://tourism-website-server-seven.vercel.app/user',{
                     method: "POST", 
                     headers: {
                       "Content-Type": "application/json",

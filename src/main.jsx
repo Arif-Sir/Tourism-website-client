@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:3000/spots')
+        loader: () => fetch('https://tourism-website-server-seven.vercel.app/spots')
       },
       {
         path: "/login",
@@ -52,12 +52,12 @@ const router = createBrowserRouter([
       {
         path: "/allspots",
         element: <AllSpots></AllSpots>,
-        loader: () => fetch('http://localhost:3000/spots')
+        loader: () => fetch('https://tourism-website-server-seven.vercel.app/spots')
       },
       {
         path: "/viewdsetail/:id",
         element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute> ,
-        loader: ({params})=>fetch(`http://localhost:3000/spots/${params.id}`)
+        loader: ({params})=>fetch(`https://tourism-website-server-seven.vercel.app/spots/${params.id}`)
  
       },
       {
@@ -71,7 +71,7 @@ const router = createBrowserRouter([
       {
         path: "/update/:id",
         element: <PrivateRoute><Update></Update></PrivateRoute>,
-        loader: ({params})=>fetch(`http://localhost:3000/spots/${params.id}`)
+        loader: ({params})=>fetch(`https://tourism-website-server-seven.vercel.app/spots/${params.id}`)
       },
     ]
   },
