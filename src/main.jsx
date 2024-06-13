@@ -62,7 +62,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/mylist",
-        // element: <PrivateRoute><MyList></MyList></PrivateRoute>,
+        element: <PrivateRoute><MyList></MyList></PrivateRoute>,
       },
       {
         path: "/addsport",
@@ -70,7 +70,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/update/:id",
-        element: <PrivateRoute><Update></Update></PrivateRoute>,
+        // element: <PrivateRoute><Update></Update></PrivateRoute>,
         loader: ({params})=>fetch(`https://tourism-website-server-seven.vercel.app/spots/${params.id}`)
       },
     ]
