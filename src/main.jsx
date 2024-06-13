@@ -25,7 +25,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement: <ErrorPage></ErrorPage>,
+    // errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -70,7 +70,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/update/:id",
-        // element: <PrivateRoute><Update></Update></PrivateRoute>,
+        element: <PrivateRoute><Update></Update></PrivateRoute>,
         loader: ({params})=>fetch(`https://tourism-website-server-seven.vercel.app/spots/${params.id}`)
       },
     ]
