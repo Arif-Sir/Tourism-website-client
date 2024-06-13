@@ -44,8 +44,7 @@ const Home = () => {
             </h2>
             <br />
             <hr className="border-black" />
-            <br />
-            
+            <br />           
             <br />
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mx-6 ">
